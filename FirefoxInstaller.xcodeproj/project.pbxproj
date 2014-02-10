@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F84085F618A72C36002788C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A943FB18A30A2300559E49 /* SystemConfiguration.framework */; };
+		F84085F718A72C3B002788C6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A943F918A30A1700559E49 /* libz.dylib */; };
+		F84085F918A73019002788C6 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F84085F818A73019002788C6 /* libbz2.dylib */; };
+		F84085FA18A73022002788C6 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F84085F818A73019002788C6 /* libbz2.dylib */; };
+		F84085FD18A7CEDF002788C6 /* NSData+BZip2.m in Sources */ = {isa = PBXBuildFile; fileRef = F84085FC18A7CEDF002788C6 /* NSData+BZip2.m */; };
+		F84085FE18A7CEDF002788C6 /* NSData+BZip2.m in Sources */ = {isa = PBXBuildFile; fileRef = F84085FC18A7CEDF002788C6 /* NSData+BZip2.m */; };
+		F840860118A8622A002788C6 /* bgintro.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F84085FF18A8622A002788C6 /* bgintro.bmp */; };
+		F840860218A8622A002788C6 /* bgintro.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F84085FF18A8622A002788C6 /* bgintro.bmp */; };
+		F840860318A8622A002788C6 /* bgplain.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F840860018A8622A002788C6 /* bgplain.bmp */; };
+		F840860418A8622A002788C6 /* bgplain.bmp in Resources */ = {isa = PBXBuildFile; fileRef = F840860018A8622A002788C6 /* bgplain.bmp */; };
+		F840861218A8886A002788C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F840861018A88848002788C6 /* QuartzCore.framework */; };
+		F840861418A890A9002788C6 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = F840861318A890A9002788C6 /* clock.png */; };
+		F840861718A89114002788C6 /* particles.png in Resources */ = {isa = PBXBuildFile; fileRef = F840861518A89114002788C6 /* particles.png */; };
+		F840861818A89114002788C6 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = F840861618A89114002788C6 /* pencil.png */; };
+		F8A943A118A2C0C500559E49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A943A018A2C0C500559E49 /* Cocoa.framework */; };
+		F8A943AB18A2C0C500559E49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8A943A918A2C0C500559E49 /* InfoPlist.strings */; };
+		F8A943AD18A2C0C500559E49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943AC18A2C0C500559E49 /* main.m */; };
+		F8A943B118A2C0C500559E49 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8A943AF18A2C0C500559E49 /* Credits.rtf */; };
+		F8A943B418A2C0C500559E49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943B318A2C0C500559E49 /* AppDelegate.m */; };
+		F8A943B718A2C0C500559E49 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A943B518A2C0C500559E49 /* MainMenu.xib */; };
+		F8A943B918A2C0C500559E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A943B818A2C0C500559E49 /* Images.xcassets */; };
+		F8A943C018A2C0C500559E49 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A943BF18A2C0C500559E49 /* XCTest.framework */; };
+		F8A943C118A2C0C500559E49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A943A018A2C0C500559E49 /* Cocoa.framework */; };
+		F8A943C918A2C0C500559E49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8A943C718A2C0C500559E49 /* InfoPlist.strings */; };
+		F8A943CB18A2C0C500559E49 /* FirefoxInstallerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943CA18A2C0C500559E49 /* FirefoxInstallerTests.m */; };
+		F8A943D818A2DB3500559E49 /* SITintedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943D718A2DB3500559E49 /* SITintedView.m */; };
+		F8A943EB18A3092D00559E49 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943DD18A3092C00559E49 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943EC18A3092D00559E49 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943DD18A3092C00559E49 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943ED18A3092D00559E49 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943DF18A3092C00559E49 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943EE18A3092D00559E49 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943DF18A3092C00559E49 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943EF18A3092D00559E49 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E118A3092C00559E49 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F018A3092D00559E49 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E118A3092C00559E49 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F118A3092D00559E49 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E318A3092C00559E49 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F218A3092D00559E49 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E318A3092C00559E49 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F318A3092D00559E49 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E618A3092D00559E49 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F418A3092D00559E49 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E618A3092D00559E49 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F518A3092D00559E49 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E818A3092D00559E49 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F618A3092D00559E49 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943E818A3092D00559E49 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F718A3092D00559E49 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943EA18A3092D00559E49 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943F818A3092D00559E49 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943EA18A3092D00559E49 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F8A943FA18A30A1700559E49 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A943F918A30A1700559E49 /* libz.dylib */; };
+		F8A943FC18A30A2300559E49 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A943FB18A30A2300559E49 /* SystemConfiguration.framework */; };
+		F8A943FF18A4157D00559E49 /* MARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943FE18A4157D00559E49 /* MARFile.m */; };
+		F8A9440018A4157D00559E49 /* MARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A943FE18A4157D00559E49 /* MARFile.m */; };
+		F8A9440218A41B8C00559E49 /* MARFileTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9440118A41B8C00559E49 /* MARFileTestCase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8A943C218A2C0C500559E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8A9439518A2C0C500559E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A9439C18A2C0C500559E49;
+			remoteInfo = FirefoxInstaller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F84085F818A73019002788C6 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		F84085FB18A7CEDF002788C6 /* NSData+BZip2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BZip2.h"; sourceTree = "<group>"; };
+		F84085FC18A7CEDF002788C6 /* NSData+BZip2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BZip2.m"; sourceTree = "<group>"; };
+		F84085FF18A8622A002788C6 /* bgintro.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = bgintro.bmp; sourceTree = "<group>"; };
+		F840860018A8622A002788C6 /* bgplain.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = bgplain.bmp; sourceTree = "<group>"; };
+		F840860E18A88833002788C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F840861018A88848002788C6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F840861318A890A9002788C6 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		F840861518A89114002788C6 /* particles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particles.png; sourceTree = "<group>"; };
+		F840861618A89114002788C6 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		F8A9439D18A2C0C500559E49 /* FirefoxInstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirefoxInstaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A943A018A2C0C500559E49 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F8A943A318A2C0C500559E49 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F8A943A418A2C0C500559E49 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F8A943A518A2C0C500559E49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8A943A818A2C0C500559E49 /* FirefoxInstaller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirefoxInstaller-Info.plist"; sourceTree = "<group>"; };
+		F8A943AA18A2C0C500559E49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8A943AC18A2C0C500559E49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8A943AE18A2C0C500559E49 /* FirefoxInstaller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirefoxInstaller-Prefix.pch"; sourceTree = "<group>"; };
+		F8A943B018A2C0C500559E49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F8A943B218A2C0C500559E49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8A943B318A2C0C500559E49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8A943B618A2C0C500559E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F8A943B818A2C0C500559E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8A943BE18A2C0C500559E49 /* FirefoxInstallerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirefoxInstallerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A943BF18A2C0C500559E49 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F8A943C618A2C0C500559E49 /* FirefoxInstallerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FirefoxInstallerTests-Info.plist"; sourceTree = "<group>"; };
+		F8A943C818A2C0C500559E49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8A943CA18A2C0C500559E49 /* FirefoxInstallerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirefoxInstallerTests.m; sourceTree = "<group>"; };
+		F8A943D618A2DB3500559E49 /* SITintedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITintedView.h; sourceTree = "<group>"; };
+		F8A943D718A2DB3500559E49 /* SITintedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITintedView.m; sourceTree = "<group>"; };
+		F8A943D918A3092C00559E49 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		F8A943DA18A3092C00559E49 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		F8A943DB18A3092C00559E49 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		F8A943DC18A3092C00559E49 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		F8A943DD18A3092C00559E49 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		F8A943DE18A3092C00559E49 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		F8A943DF18A3092C00559E49 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		F8A943E018A3092C00559E49 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		F8A943E118A3092C00559E49 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		F8A943E218A3092C00559E49 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		F8A943E318A3092C00559E49 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		F8A943E418A3092C00559E49 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		F8A943E518A3092C00559E49 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		F8A943E618A3092D00559E49 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		F8A943E718A3092D00559E49 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		F8A943E818A3092D00559E49 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		F8A943E918A3092D00559E49 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		F8A943EA18A3092D00559E49 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		F8A943F918A30A1700559E49 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F8A943FB18A30A2300559E49 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F8A943FD18A4157D00559E49 /* MARFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MARFile.h; sourceTree = "<group>"; };
+		F8A943FE18A4157D00559E49 /* MARFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARFile.m; sourceTree = "<group>"; };
+		F8A9440118A41B8C00559E49 /* MARFileTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MARFileTestCase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8A9439A18A2C0C500559E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F840861218A8886A002788C6 /* QuartzCore.framework in Frameworks */,
+				F84085F918A73019002788C6 /* libbz2.dylib in Frameworks */,
+				F8A943FC18A30A2300559E49 /* SystemConfiguration.framework in Frameworks */,
+				F8A943FA18A30A1700559E49 /* libz.dylib in Frameworks */,
+				F8A943A118A2C0C500559E49 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A943BB18A2C0C500559E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84085FA18A73022002788C6 /* libbz2.dylib in Frameworks */,
+				F84085F718A72C3B002788C6 /* libz.dylib in Frameworks */,
+				F84085F618A72C36002788C6 /* SystemConfiguration.framework in Frameworks */,
+				F8A943C118A2C0C500559E49 /* Cocoa.framework in Frameworks */,
+				F8A943C018A2C0C500559E49 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8A9439418A2C0C500559E49 = {
+			isa = PBXGroup;
+			children = (
+				F8A943A618A2C0C500559E49 /* FirefoxInstaller */,
+				F8A943C418A2C0C500559E49 /* FirefoxInstallerTests */,
+				F8A9439F18A2C0C500559E49 /* Frameworks */,
+				F8A9439E18A2C0C500559E49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8A9439E18A2C0C500559E49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8A9439D18A2C0C500559E49 /* FirefoxInstaller.app */,
+				F8A943BE18A2C0C500559E49 /* FirefoxInstallerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8A9439F18A2C0C500559E49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F840861018A88848002788C6 /* QuartzCore.framework */,
+				F840860E18A88833002788C6 /* CoreGraphics.framework */,
+				F84085F818A73019002788C6 /* libbz2.dylib */,
+				F8A943FB18A30A2300559E49 /* SystemConfiguration.framework */,
+				F8A943F918A30A1700559E49 /* libz.dylib */,
+				F8A943A018A2C0C500559E49 /* Cocoa.framework */,
+				F8A943BF18A2C0C500559E49 /* XCTest.framework */,
+				F8A943A218A2C0C500559E49 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8A943A218A2C0C500559E49 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8A943A318A2C0C500559E49 /* AppKit.framework */,
+				F8A943A418A2C0C500559E49 /* CoreData.framework */,
+				F8A943A518A2C0C500559E49 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F8A943A618A2C0C500559E49 /* FirefoxInstaller */ = {
+			isa = PBXGroup;
+			children = (
+				F840861318A890A9002788C6 /* clock.png */,
+				F840861518A89114002788C6 /* particles.png */,
+				F840861618A89114002788C6 /* pencil.png */,
+				F84085FF18A8622A002788C6 /* bgintro.bmp */,
+				F840860018A8622A002788C6 /* bgplain.bmp */,
+				F8A943FD18A4157D00559E49 /* MARFile.h */,
+				F8A943FE18A4157D00559E49 /* MARFile.m */,
+				F84085FB18A7CEDF002788C6 /* NSData+BZip2.h */,
+				F84085FC18A7CEDF002788C6 /* NSData+BZip2.m */,
+				F8A943B218A2C0C500559E49 /* AppDelegate.h */,
+				F8A943B318A2C0C500559E49 /* AppDelegate.m */,
+				F8A943B518A2C0C500559E49 /* MainMenu.xib */,
+				F8A943B818A2C0C500559E49 /* Images.xcassets */,
+				F8A943A718A2C0C500559E49 /* Supporting Files */,
+				F8A943D618A2DB3500559E49 /* SITintedView.h */,
+				F8A943D718A2DB3500559E49 /* SITintedView.m */,
+				F8A943D918A3092C00559E49 /* ASIHTTPRequestConfig.h */,
+				F8A943DA18A3092C00559E49 /* ASIProgressDelegate.h */,
+				F8A943DB18A3092C00559E49 /* ASIHTTPRequestDelegate.h */,
+				F8A943DC18A3092C00559E49 /* ASIInputStream.h */,
+				F8A943DD18A3092C00559E49 /* ASIInputStream.m */,
+				F8A943DE18A3092C00559E49 /* ASIFormDataRequest.h */,
+				F8A943DF18A3092C00559E49 /* ASIFormDataRequest.m */,
+				F8A943E018A3092C00559E49 /* ASIHTTPRequest.h */,
+				F8A943E118A3092C00559E49 /* ASIHTTPRequest.m */,
+				F8A943E218A3092C00559E49 /* ASINetworkQueue.h */,
+				F8A943E318A3092C00559E49 /* ASINetworkQueue.m */,
+				F8A943E418A3092C00559E49 /* ASICacheDelegate.h */,
+				F8A943E518A3092C00559E49 /* ASIDownloadCache.h */,
+				F8A943E618A3092D00559E49 /* ASIDownloadCache.m */,
+				F8A943E718A3092D00559E49 /* ASIDataCompressor.h */,
+				F8A943E818A3092D00559E49 /* ASIDataCompressor.m */,
+				F8A943E918A3092D00559E49 /* ASIDataDecompressor.h */,
+				F8A943EA18A3092D00559E49 /* ASIDataDecompressor.m */,
+			);
+			path = FirefoxInstaller;
+			sourceTree = "<group>";
+		};
+		F8A943A718A2C0C500559E49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8A943A818A2C0C500559E49 /* FirefoxInstaller-Info.plist */,
+				F8A943A918A2C0C500559E49 /* InfoPlist.strings */,
+				F8A943AC18A2C0C500559E49 /* main.m */,
+				F8A943AE18A2C0C500559E49 /* FirefoxInstaller-Prefix.pch */,
+				F8A943AF18A2C0C500559E49 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8A943C418A2C0C500559E49 /* FirefoxInstallerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8A943CA18A2C0C500559E49 /* FirefoxInstallerTests.m */,
+				F8A9440118A41B8C00559E49 /* MARFileTestCase.m */,
+				F8A943C518A2C0C500559E49 /* Supporting Files */,
+			);
+			path = FirefoxInstallerTests;
+			sourceTree = "<group>";
+		};
+		F8A943C518A2C0C500559E49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8A943C618A2C0C500559E49 /* FirefoxInstallerTests-Info.plist */,
+				F8A943C718A2C0C500559E49 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8A9439C18A2C0C500559E49 /* FirefoxInstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A943CE18A2C0C500559E49 /* Build configuration list for PBXNativeTarget "FirefoxInstaller" */;
+			buildPhases = (
+				F8A9439918A2C0C500559E49 /* Sources */,
+				F8A9439A18A2C0C500559E49 /* Frameworks */,
+				F8A9439B18A2C0C500559E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirefoxInstaller;
+			productName = FirefoxInstaller;
+			productReference = F8A9439D18A2C0C500559E49 /* FirefoxInstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8A943BD18A2C0C500559E49 /* FirefoxInstallerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A943D118A2C0C500559E49 /* Build configuration list for PBXNativeTarget "FirefoxInstallerTests" */;
+			buildPhases = (
+				F8A943BA18A2C0C500559E49 /* Sources */,
+				F8A943BB18A2C0C500559E49 /* Frameworks */,
+				F8A943BC18A2C0C500559E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A943C318A2C0C500559E49 /* PBXTargetDependency */,
+			);
+			name = FirefoxInstallerTests;
+			productName = FirefoxInstallerTests;
+			productReference = F8A943BE18A2C0C500559E49 /* FirefoxInstallerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8A9439518A2C0C500559E49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Stefan Arentz";
+				TargetAttributes = {
+					F8A943BD18A2C0C500559E49 = {
+						TestTargetID = F8A9439C18A2C0C500559E49;
+					};
+				};
+			};
+			buildConfigurationList = F8A9439818A2C0C500559E49 /* Build configuration list for PBXProject "FirefoxInstaller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8A9439418A2C0C500559E49;
+			productRefGroup = F8A9439E18A2C0C500559E49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A9439C18A2C0C500559E49 /* FirefoxInstaller */,
+				F8A943BD18A2C0C500559E49 /* FirefoxInstallerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8A9439B18A2C0C500559E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A943AB18A2C0C500559E49 /* InfoPlist.strings in Resources */,
+				F8A943B918A2C0C500559E49 /* Images.xcassets in Resources */,
+				F840860118A8622A002788C6 /* bgintro.bmp in Resources */,
+				F8A943B118A2C0C500559E49 /* Credits.rtf in Resources */,
+				F8A943B718A2C0C500559E49 /* MainMenu.xib in Resources */,
+				F840861418A890A9002788C6 /* clock.png in Resources */,
+				F840861818A89114002788C6 /* pencil.png in Resources */,
+				F840860318A8622A002788C6 /* bgplain.bmp in Resources */,
+				F840861718A89114002788C6 /* particles.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A943BC18A2C0C500559E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A943C918A2C0C500559E49 /* InfoPlist.strings in Resources */,
+				F840860218A8622A002788C6 /* bgintro.bmp in Resources */,
+				F840860418A8622A002788C6 /* bgplain.bmp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8A9439918A2C0C500559E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A943ED18A3092D00559E49 /* ASIFormDataRequest.m in Sources */,
+				F8A943EB18A3092D00559E49 /* ASIInputStream.m in Sources */,
+				F8A943D818A2DB3500559E49 /* SITintedView.m in Sources */,
+				F8A943F518A3092D00559E49 /* ASIDataCompressor.m in Sources */,
+				F8A943F118A3092D00559E49 /* ASINetworkQueue.m in Sources */,
+				F8A943B418A2C0C500559E49 /* AppDelegate.m in Sources */,
+				F8A943AD18A2C0C500559E49 /* main.m in Sources */,
+				F8A943F318A3092D00559E49 /* ASIDownloadCache.m in Sources */,
+				F8A943EF18A3092D00559E49 /* ASIHTTPRequest.m in Sources */,
+				F8A943F718A3092D00559E49 /* ASIDataDecompressor.m in Sources */,
+				F84085FD18A7CEDF002788C6 /* NSData+BZip2.m in Sources */,
+				F8A943FF18A4157D00559E49 /* MARFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A943BA18A2C0C500559E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A9440218A41B8C00559E49 /* MARFileTestCase.m in Sources */,
+				F8A943EC18A3092D00559E49 /* ASIInputStream.m in Sources */,
+				F8A943F018A3092D00559E49 /* ASIHTTPRequest.m in Sources */,
+				F8A943F618A3092D00559E49 /* ASIDataCompressor.m in Sources */,
+				F8A943F418A3092D00559E49 /* ASIDownloadCache.m in Sources */,
+				F8A943EE18A3092D00559E49 /* ASIFormDataRequest.m in Sources */,
+				F8A9440018A4157D00559E49 /* MARFile.m in Sources */,
+				F8A943F818A3092D00559E49 /* ASIDataDecompressor.m in Sources */,
+				F84085FE18A7CEDF002788C6 /* NSData+BZip2.m in Sources */,
+				F8A943CB18A2C0C500559E49 /* FirefoxInstallerTests.m in Sources */,
+				F8A943F218A3092D00559E49 /* ASINetworkQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8A943C318A2C0C500559E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8A9439C18A2C0C500559E49 /* FirefoxInstaller */;
+			targetProxy = F8A943C218A2C0C500559E49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8A943A918A2C0C500559E49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A943AA18A2C0C500559E49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F8A943AF18A2C0C500559E49 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A943B018A2C0C500559E49 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F8A943B518A2C0C500559E49 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A943B618A2C0C500559E49 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F8A943C718A2C0C500559E49 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A943C818A2C0C500559E49 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8A943CC18A2C0C500559E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F8A943CD18A2C0C500559E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F8A943CF18A2C0C500559E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirefoxInstaller/FirefoxInstaller-Prefix.pch";
+				INFOPLIST_FILE = "FirefoxInstaller/FirefoxInstaller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8A943D018A2C0C500559E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirefoxInstaller/FirefoxInstaller-Prefix.pch";
+				INFOPLIST_FILE = "FirefoxInstaller/FirefoxInstaller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F8A943D218A2C0C500559E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FirefoxInstaller.app/Contents/MacOS/FirefoxInstaller";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirefoxInstaller/FirefoxInstaller-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FirefoxInstallerTests/FirefoxInstallerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F8A943D318A2C0C500559E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FirefoxInstaller.app/Contents/MacOS/FirefoxInstaller";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FirefoxInstaller/FirefoxInstaller-Prefix.pch";
+				INFOPLIST_FILE = "FirefoxInstallerTests/FirefoxInstallerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8A9439818A2C0C500559E49 /* Build configuration list for PBXProject "FirefoxInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A943CC18A2C0C500559E49 /* Debug */,
+				F8A943CD18A2C0C500559E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A943CE18A2C0C500559E49 /* Build configuration list for PBXNativeTarget "FirefoxInstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A943CF18A2C0C500559E49 /* Debug */,
+				F8A943D018A2C0C500559E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A943D118A2C0C500559E49 /* Build configuration list for PBXNativeTarget "FirefoxInstallerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A943D218A2C0C500559E49 /* Debug */,
+				F8A943D318A2C0C500559E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8A9439518A2C0C500559E49 /* Project object */;
+}
